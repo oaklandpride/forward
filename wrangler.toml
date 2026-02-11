@@ -1,7 +1,7 @@
-name = "oakland-forwarder"
+name = "forward"
 main = "worker.js"
 compatibility_date = "2023-01-01"
 
 [[routes]]
 pattern = "*.oaklandpride.org/*"
-custom_domain = true
+custom_domain = false
