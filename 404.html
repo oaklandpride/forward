@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // Catch-all redirect logic
+        const url = new URL(window.location.href);
+        const destination = new URL("https://oaklandprideofficial.org");
+        
+        // On some static hosts, 404 preserves the path in the URL bar, so we can grab it.
+        destination.pathname = url.pathname;
+        destination.search = url.search;
+        
+        window.location.href = destination.toString();
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="https://oaklandprideofficial.org">oaklandprideofficial.org</a>...</p>
+</body>
+</html>

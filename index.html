@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0;url=https://oaklandprideofficial.org">
+    <title>Redirecting...</title>
+    <script>
+        // Preserve query parameters and path if possible (though index is usually root)
+        const url = new URL(window.location.href);
+        const destination = new URL("https://oaklandprideofficial.org");
+        destination.pathname = url.pathname;
+        destination.search = url.search;
+        window.location.href = destination.toString();
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="https://oaklandprideofficial.org">oaklandprideofficial.org</a>...</p>
+</body>
+</html>
