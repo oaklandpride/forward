@@ -4,6 +4,7 @@ addEventListener('fetch', event => {
 
 async function handleRequest(request) {
   const url = new URL(request.url)
-  url.hostname = 'oaklandprideofficial.org'
-  return Response.redirect(url.toString(), 301)
+  const { pathname, search } = url
+  const destinationURL = `https://oaklandprideofficial.org${pathname}${search}`
+  return Response.redirect(destinationURL, 301)
 }

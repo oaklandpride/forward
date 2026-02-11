@@ -1,3 +1,7 @@
-name = "my-forwarder-worker" # TODO: Change this to a unique name for your worker
+name = "oakland-forwarder"
 main = "worker.js"
 compatibility_date = "2023-01-01"
+
+[routes]
+pattern = "*.oaklandpride.org/*"
+custom_domain = true
