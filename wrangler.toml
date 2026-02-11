@@ -5,3 +5,7 @@ compatibility_date = "2023-01-01"
 [[routes]]
 pattern = "*.oaklandpride.org/*"
 custom_domain = false
+
+[[routes]]
+pattern = "oaklandpride.org/*"
+custom_domain = false
